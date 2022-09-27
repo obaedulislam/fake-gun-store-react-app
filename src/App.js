@@ -1,10 +1,17 @@
+import AllGun from './components/AllGun/AllGun';
+import Navbar from './components/Navbar/Navbar';
 import './App.css';
-import Navbar from './Navbar/Navbar';
+import { useState } from 'react';
+
 
 function App() {
+  const [count, setCount] = useState(0);
+
+
   return (
     <div className="App">
-      <Navbar></Navbar>
+      <Navbar count={count}></Navbar>
+      <AllGun></AllGun>
     </div>
   );
 }
