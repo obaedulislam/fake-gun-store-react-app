@@ -5,7 +5,7 @@ import React from 'react';
 const Navbar = ({count}) => {
     return (
         <div>
-            <div className="navbar-menu shadow w-full">
+            <div className="navbar-menu shadow w-full sticky top-0 ">
                 <div className="navbar bg-base-100  max-w-[1200px] mx-auto">
                     <div className="flex-1">
                         <a href='/' className="  lg:text-3xl md:text-2xl text-xl uppercase font-bold text-yellow-600">Fake Gun Store</a>

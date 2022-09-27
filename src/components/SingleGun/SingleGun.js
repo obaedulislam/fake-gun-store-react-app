@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const SingleGun = ({gun}) => {
+const SingleGun = ({gun, increaseCount}) => {
     const{id, name, img, bullet, capacity, action, price, category} = gun;
     return (
         <div className=''>
@@ -22,7 +22,7 @@ const SingleGun = ({gun}) => {
 
                 <div className="two-btn flex justify-between">
                     <div className="cart">
-                        <button className="btn btn-warning btn-sm">Add To Cart</button>
+                        <button onClick={() => increaseCount()} className="btn btn-warning btn-sm">Add To Cart</button>
                     </div>
                     <div className="details">
                         <button className="btn btn-active btn-sm">Details</button>
