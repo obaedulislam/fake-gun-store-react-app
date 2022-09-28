@@ -2,6 +2,7 @@ import AllGun from './components/AllGun/AllGun';
 import Navbar from './components/Navbar/Navbar';
 import './App.css';
 import { useState } from 'react';
+import Footer from './components/Footer/Footer';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
     <div className="App">
       <Navbar count={count}></Navbar>
       <AllGun increaseCount={increaseCount}></AllGun>
+      <Footer></Footer>
     </div>
   );
 }

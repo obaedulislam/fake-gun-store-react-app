@@ -11,7 +11,7 @@ const AllGun = ({increaseCount}) => {
     }, [])
  
     return (
-        <div className='max-w-[1150px] mx-auto mt-20'>
+        <div className='max-w-[1150px] mx-auto mt-20 pb-10'>
             <div className="all-gun-heading max-w-[900px] mx-auto py-7">
                 <h1 className='text-3xl font-semibold text-center'>Welcome to <span className='uppercase text-yellow-600 font-bold '>Fake Gun Store</span></h1>
                 <p className='text-center mt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit optio eveniet quasi possimus consectetur. Magnam, cumque omnis? Minima aliquam repudiandae nemo iusto</p>

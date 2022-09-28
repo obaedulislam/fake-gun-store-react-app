@@ -32,7 +32,7 @@ const SingleGun = ({gun, increaseCount}) => {
                         <label onClick={() => setModalData(gun)} htmlFor="my-modal-3" className="btn modal-button btn-active btn-sm">open modal</label>
                     </div>
                     {
-                        modalData && (<Modal data = {modalData} setModalData ={setModalData}></Modal>)
+                        modalData && (<Modal key={id} data = {modalData} setModalData ={setModalData}></Modal>)
                     }
                     
                 </div>

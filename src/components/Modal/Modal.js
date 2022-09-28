@@ -6,9 +6,9 @@ const Modal = ({data, setModalData}) => {
         <div>
             <input type="checkbox" id="my-modal-3" className="modal-toggle" />
             <div className="modal">
-                <div className="modal-box relative w-[900px]">
+                <div className="modal-box relative">
                     <label onClick={() =>setModalData(null)} htmlFor="my-modal-3" className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
-                    <div className="modal-content grid md:grid-cols-2 grid-cols-1   bg-white p-4">
+                    <div className="modal-content grid md:grid-cols-2 grid-cols-1   bg-white p-3">
                         <div className="img-sec border-r-2 ">
                             <img className='h-[200px] w-full' src={img} alt="" />
                         </div>
