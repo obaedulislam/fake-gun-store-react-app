@@ -11,12 +11,12 @@ const AllGun = ({increaseCount}) => {
     }, [])
  
     return (
-        <div className='max-w-[1200px] mx-auto'>
+        <div className='max-w-[1150px] mx-auto mt-20'>
             <div className="all-gun-heading max-w-[900px] mx-auto py-7">
                 <h1 className='text-3xl font-semibold text-center'>Welcome to <span className='uppercase text-yellow-600 font-bold '>Fake Gun Store</span></h1>
                 <p className='text-center mt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit optio eveniet quasi possimus consectetur. Magnam, cumque omnis? Minima aliquam repudiandae nemo iusto</p>
             </div>
-            <div className="all-gun-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+            <div className="all-gun-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-5">
                 {
                     guns.map( gun =>
                         <SingleGun key={gun.id} gun={gun} increaseCount = {increaseCount}></SingleGun>

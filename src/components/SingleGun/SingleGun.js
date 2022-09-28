@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Modal from '../Modal/Modal';
 
 
 const SingleGun = ({gun, increaseCount}) => {
+    const[ modalData, setModalData] = useState({});
+    
     const{id, name, img, bullet, capacity, action, price, category} = gun;
     return (
         <div className=''>
@@ -25,8 +28,13 @@ const SingleGun = ({gun, increaseCount}) => {
                         <button onClick={() => increaseCount()} className="btn btn-warning btn-sm">Add To Cart</button>
                     </div>
                     <div className="details">
-                        <button className="btn btn-active btn-sm">Details</button>
+                        {/* <button className="btn btn-active btn-sm">Details</button> */}
+                        <label onClick={() => setModalData(gun)} htmlFor="my-modal-3" className="btn modal-button btn-active btn-sm">open modal</label>
                     </div>
+                    {
+                        modalData && (<Modal data = {modalData} setModalData ={setModalData}></Modal>)
+                    }
+                    
                 </div>
             </div>
             </div>
